@@ -3,10 +3,10 @@
   angular
     .module("myApp", [])
     .service("listService", listService)
-    .controller("ListControl", ListControl)
+    .controller("ListController", ListController)
     .directive("listDisplay", listDisplay);
 
-  function ListControl($http, listService) {
+  function ListController($http, listService) {
     var lstblk = this;
     listService.then(function (data) {    
       lstblk.listItems = data;
