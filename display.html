@@ -1,8 +1,8 @@
 <div ng-controller="ListController as ctrl">
       <table class="lstdt">
             <thead>
-                  <th class="row-1 row-ID">Item</th>
-                  <th class="row-2 row-name">Price</th>
+                  <th class="row-ID">Item</th>
+                  <th class="row-name">Price</th>
             </thead>
             <tbody ng-repeat="item in ctrl.listItems | orderBy:'name'">
                   <tr>
