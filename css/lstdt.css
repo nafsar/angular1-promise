@@ -1,0 +1,29 @@
+ .lstdt {
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+}
+.row-ID {
+  width: 45%;
+}
+.row-name {
+  width: 55%;
+}
+
+.lstdt td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.lstdt th {
+  background: #BFBDB9;
+  color: #FFF;
+}
+.lstdt td,
+.lstdt th {
+  text-align: left;
+  padding: 3px 5px;
+}
+.lstdt tr:nth-child(odd) {
+  background: #DBF1FF;
+}

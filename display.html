@@ -1,0 +1,14 @@
+<div ng-controller="ListControl as ctrl">
+      <table class="lstdt">
+            <thead>
+                  <th class="row-1 row-ID">Item</th>
+                  <th class="row-2 row-name">Price</th>
+            </thead>
+            <tbody ng-repeat="item in ctrl.listItems | orderBy:'name'">
+                  <tr>
+                        <td>{{item.name}}:</td>
+                        <td>{{item.payed | currency}}</td>
+                  </tr>
+            </tbody>
+      </table>
+</div>
