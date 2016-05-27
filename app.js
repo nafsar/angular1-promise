@@ -6,7 +6,7 @@
     .controller("ListController", ListController)
     .directive("listDisplay", listDisplay);
 
-  function ListController($http, listService) {
+  function ListController(listService) {
     var lstblk = this;
     listService.then(function (data) {    
       lstblk.listItems = data;
